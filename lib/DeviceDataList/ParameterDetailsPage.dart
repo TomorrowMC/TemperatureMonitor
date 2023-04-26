@@ -59,20 +59,23 @@ class _ParameterDetailsPageState extends State<ParameterDetailsPage> {
         decoration: BoxDecoration(
           border: Border.all(color: Colors.black),
         ),
-        child: LineChart(
-          LineChartData(
-            gridData: FlGridData(show: false),
-            titlesData: FlTitlesData(show: false),
-            borderData: FlBorderData(show: false),
-            lineBarsData: [
-              LineChartBarData(
-                spots: getSpots(),
-                isCurved: true,
-                barWidth: 2,
-                belowBarData: BarAreaData(show: false),
-                dotData: FlDotData(show: false),
-              ),
-            ],
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 20.0), // Add padding here
+          child: LineChart(
+            LineChartData(
+              gridData: FlGridData(show: false),
+              titlesData: FlTitlesData(show: false),
+              borderData: FlBorderData(show: false),
+              lineBarsData: [
+                LineChartBarData(
+                  spots: getSpots(),
+                  isCurved: true,
+                  barWidth: 2,
+                  belowBarData: BarAreaData(show: false),
+                  dotData: FlDotData(show: false),
+                ),
+              ],
+            ),
           ),
         ),
       ),
