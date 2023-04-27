@@ -1,6 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.lv_hua_monitor">
-   <application
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
         android:label="绿化参数检测"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">

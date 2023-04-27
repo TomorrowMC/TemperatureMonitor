@@ -55,30 +55,27 @@ class _ParameterDetailsPageState extends State<ParameterDetailsPage> {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
-      child: Container(
-        decoration: BoxDecoration(
-          border: Border.all(color: Colors.black),
-        ),
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 20.0), // Add padding here
           child: LineChart(
             LineChartData(
-              gridData: FlGridData(show: false),
-              titlesData: FlTitlesData(show: false),
-              borderData: FlBorderData(show: false),
+              gridData: FlGridData(show: true),
+              titlesData: FlTitlesData(show: true),
+              borderData: FlBorderData(show: true),
               lineBarsData: [
                 LineChartBarData(
                   spots: getSpots(),
-                  isCurved: true,
+                  isCurved: false,
                   barWidth: 2,
-                  belowBarData: BarAreaData(show: false),
+                  belowBarData: BarAreaData(show: true),
                   dotData: FlDotData(show: false),
                 ),
+
               ],
+
             ),
           ),
         ),
-      ),
     );
   }
 }
