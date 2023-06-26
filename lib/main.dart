@@ -37,7 +37,7 @@ class _MainScreenState extends State<MainScreen> {
   int _currentIndex = 0;
   final List<Widget> _children = [
     FriendsListPage(),
-    HelloWorldScreen(),
+    LoginScreen(),
   ];
 
   void _onItemTapped(int index) {

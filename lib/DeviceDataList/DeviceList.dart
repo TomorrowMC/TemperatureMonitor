@@ -34,14 +34,14 @@ class _DeviceDetailsPageState extends State<DeviceDetailsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('设备详情'),
+        title: Text('Sensor Details'),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Text('最后刷新时间：$lastRefreshTime'),
+            child: Text('Last Refresh Time: $lastRefreshTime'),
           ),
           Expanded(
             child: ListView.builder(
@@ -53,7 +53,7 @@ class _DeviceDetailsPageState extends State<DeviceDetailsPage> {
                   children: [
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: Text('参数名称: $parameterName',
+                      child: Text('Parameter Name: $parameterName',
                           style:
                           TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
                     ),
@@ -74,6 +74,7 @@ class _DeviceDetailsPageState extends State<DeviceDetailsPage> {
       ),
     );
   }
+
 
   String _getCurrentTime() {
     var now = DateTime.now();

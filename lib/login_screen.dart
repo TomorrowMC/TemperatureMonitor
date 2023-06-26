@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart' show timeDilation;
 import 'package:flutter_login/flutter_login.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
 import 'dashboard_screen.dart';
 const users = const {
   '1':'2',
@@ -52,8 +51,7 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FlutterLogin(
-      title: 'XJTLU\n 绿化温度检测',
-      logo: AssetImage('lib/temp.png'),
+      title: 'XJTLU\n绿化温度检测',
       userType: LoginUserType.name,
       onLogin: _authUser,
       onSubmitAnimationCompleted: () {

@@ -64,8 +64,8 @@ class _FriendsListPageState extends State<FriendsListPage>
       title: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('设备ID: ${car.deviceId.toString()}'),
-          Text('最近一次的湿度: ${car.latestHumidity}'),
+          Text('Sensor ID: ${car.deviceId.toString()}'),
+          Text('Latest humidity: ${car.latestHumidity}'),
         ],
       ),
       trailing: Container(
@@ -117,7 +117,7 @@ class _FriendsListPageState extends State<FriendsListPage>
     }
 
     return Scaffold(
-      appBar: AppBar(title: Text('传感器列表')),
+      appBar: AppBar(title: Text('Sensor List')),
       body: content,
     );
   }
